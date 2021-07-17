@@ -1,0 +1,29 @@
+.cards{
+/*    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin: auto;
+      padding: 10px;
+
+}
+
+@media (min-width: 900px) and (max-width: 1349px) { 
+    .cards{
+        grid-template-columns: auto auto;
+       
+    }
+ }
+
+ @media (max-width: 899px){
+    .cards{
+        grid-template-columns: auto;
+       
+    }
+}
+
+
+
+
