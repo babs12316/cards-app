@@ -1,17 +1,28 @@
+import { useState } from "react";
 import useFetch from "../../hooks/useFetch";
 import CardComponent from "../CardComponent/CardComponent";
-import style from './CardsComponent.module.css'
-
+import SearchInputComponent from "../SearchInputComponent/SearchInputComponent";
+import style from "./CardsComponent.module.css";
 
 const CardsComponent = () => {
-  const cards = useFetch();
+    const [searchInput,setSearchInput]= useState('')
+    const cards = useFetch(searchInput);
+    const handleChangeSearchInput = (updatedSearchTerm: string) =>{  
+        setSearchInput(updatedSearchTerm)
+    }
 
   return (
-    <section className={style.cards}>
-           {cards.map((card) => (
-        <CardComponent key={card.id} card={card}></CardComponent>
-      ))}
-    </section>
+      <div>
+      <SearchInputComponent onChangeSearchInput={handleChangeSearchInput}/>    
+      <div className={style.cardsContainer}>
+      
+      <section className={style.cards}>
+        {cards.map((card) => (
+          <CardComponent key={card.id} card={card}></CardComponent>
+        ))}
+      </section>
+    </div>
+    </div>
   );
 };
 

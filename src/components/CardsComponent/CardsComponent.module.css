@@ -1,14 +1,21 @@
+.cardsContainer{
+/*display: grid;
+justify-content: ;*/
+margin-top: 30px;
+text-align: left;
+}
+
 .cards{
-/*    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;*/
-    display: grid;
+    display: inline-grid;
     grid-template-columns: auto auto auto;
-    justify-content: center;
+    justify-content: start;
     margin: auto;
       padding: 10px;
 
 }
+
+
+
 
 @media (min-width: 900px) and (max-width: 1349px) { 
     .cards{

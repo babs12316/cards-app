@@ -3,8 +3,8 @@ import style from './App.module.css';
 
 function App() {
   return (
-    <div className={style.App}>
-      <h1>Card App</h1>
+    <div className={style.app}>
+      <h1 className={style.title}>Card App</h1>
       <CardsComponent></CardsComponent>
     </div>
   );

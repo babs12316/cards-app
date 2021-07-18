@@ -1,4 +1,11 @@
-h1{
+
+.app{
+  text-align: left;
+width: 70%;
+margin: 0 auto;
+}
+
+.title{
  background-color: #f9f9f9;
  color: var(--primary);
  text-align: center;
