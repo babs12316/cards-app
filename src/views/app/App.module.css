@@ -1,7 +1,8 @@
 
 .app{
   text-align: left;
-width: 70%;
+  width:100%;
+max-width: 1500px;
 margin: 0 auto;
 }
 
@@ -10,4 +11,19 @@ margin: 0 auto;
  color: var(--primary);
  text-align: center;
  padding: 5px;
+}
+
+
+@media (max-width: 899px) { 
+  .app{
+    max-width: 435px;
+
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1349px) { 
+  .app{
+    max-width: 900px;
+
+  }
 }
