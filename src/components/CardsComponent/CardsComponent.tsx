@@ -12,17 +12,17 @@ const CardsComponent = () => {
     }
 
   return (
-      <div>
+      <>
       <SearchInputComponent onChangeSearchInput={handleChangeSearchInput}/>    
       <div className={style.cardsContainer}>
       
-      <section className={style.cards}>
+      <section className={style.cards} data-testid="cardsSection">
         {cards.map((card) => (
-          <CardComponent key={card.id} card={card}></CardComponent>
+         <a key={card.id} href={"#"+card.id} data-testid="card"> <CardComponent  card={card}></CardComponent></a>
         ))}
       </section>
     </div>
-    </div>
+    </>
   );
 };
 
