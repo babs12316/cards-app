@@ -1,0 +1,44 @@
+.cardsContainer{
+/*display: grid;
+justify-content: ;*/
+margin-top: 30px;
+text-align: left;
+}
+
+.cards{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    justify-content: start;
+    margin: auto;
+      padding: 10px;
+
+}
+
+.cards a {
+    text-decoration: none;
+}
+
+section a:hover article{
+    border: 1px solid var(--primary);
+}
+
+
+
+
+@media (min-width: 900px) and (max-width: 1349px) { 
+    .cards{
+        grid-template-columns: auto auto;
+       
+    }
+ }
+
+ @media (max-width: 899px){
+    .cards{
+        grid-template-columns: auto;
+       
+    }
+}
+
+
+
+

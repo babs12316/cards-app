@@ -1,0 +1,29 @@
+
+.app{
+  text-align: left;
+  width:100%;
+max-width: 1500px;
+margin: 0 auto;
+}
+
+.title{
+ background-color: #f9f9f9;
+ color: var(--primary);
+ text-align: center;
+ padding: 5px;
+}
+
+
+@media (max-width: 899px) { 
+  .app{
+    max-width: 435px;
+
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1349px) { 
+  .app{
+    max-width: 900px;
+
+  }
+}
