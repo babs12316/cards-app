@@ -1,5 +1,5 @@
 import React from "react";
-import { fireEvent, render, screen } from "@testing-library/react";
+import {  render, screen } from "@testing-library/react";
 import CardComponent from "./CardComponent";
 import { ICard } from "../../constants/interfaces";
 
