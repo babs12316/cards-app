@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import { cardData } from "../constants/apiUrls";
+import cardData  from "../constants/apiUrls";
 import { ICard } from "../constants/interfaces";
 
-const useFetch = (searchTerm:string) => {
+const useFetch = (searchTerm:string):ICard[] =>{
   const [data, setData] = useState<ICard[]>([]);
   let url:string;
   if(searchTerm ===''){
       url=cardData
   }else{
-      url=cardData+'?search='+searchTerm
+      url=`${cardData}?search=${searchTerm}`
   }
 
   useEffect(() => {
